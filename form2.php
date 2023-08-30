@@ -33,17 +33,10 @@ if(isset($_POST['next'])){
             <label for="">Email</label><br>
             <input type="text" name="email"  value="<?=isset($_SESSION['info']['email'])?$_SESSION['info']['email']:''?>"><br>
             <div calss="btn-box">
-            <button type="submit" name="next" value="Next">Next</button>
             <button><a href="form1.php">Previous</a></button>
+            <button type="submit" name="next" value="Next">Next</button>
             </div>
         </form>
-        <div class="step-row">
-                <div id="progress"></div>
-                <div class="step-col"><small>Step1</small></div>
-                <div class="step-col"><small>Step2</small></div>
-                <div class="step-col"><small>Step3</small></div>
-                
-        </div>
         </div>
     </body>
 </html>

@@ -34,13 +34,6 @@ if(isset($_POST['next'])){
             <input type="text" name="lname" value="<?=isset($_SESSION['info']['lname'])?$_SESSION['info']['lname']:''?>"><br>
             <div class="btn-box"><button type="submit" name="next" value="Next">Next</button></div>
         </form>
-        <div class="step-row">
-                <div id="progress"></div>
-                <div class="step-col"><small>Step1</small></div>
-                <div class="step-col"><small>Step2</small></div>
-                <div class="step-col"><small>Step3</small></div>
-                
-        </div>
         </div>
     </body>
 </html>

@@ -33,8 +33,8 @@ if(isset($_POST['submit'])){
             <label for="">Age</label><br>
             <input type="text" name="age"  value="<?=isset($_SESSION['info']['age'])?$_SESSION['info']['age']:''?>"><br>
             <div class="btn-box">
-            <button type="submit" name="submit" value="submit">submit</button>
             <button><a href="form2.php">Previous</a></button>
+            <button type="submit" name="submit" value="submit">submit</button>
             </div>
 
         </form>
