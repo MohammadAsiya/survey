@@ -20,18 +20,30 @@ if(isset($_POST['next'])){
 <!DOCTYPE html>
 <html lang="en">
     <head>
+       <link rel="stylesheet" href="style.css">
        <meta charset="UTF-8">
        <title>form2</title>
     </head>
     <body>
+        <div class="container">
+        <h3>Contact info</h3>
         <form action="" method="POST">
             <label for="">Phone Number</label><br>
             <input type="text" name="phone" value="<?=isset($_SESSION['info']['phone'])?$_SESSION['info']['phone']:''?>"><br>
             <label for="">Email</label><br>
-            <input type="text" name="email"  value="<?=isset($_SESSION['info']['email'])?$_SESSION['info']['email']:''?>"><br>><br>
-            <input type="submit" name="next" value="Next">
-            <a href="form1.php">Previous</a>
-
+            <input type="text" name="email"  value="<?=isset($_SESSION['info']['email'])?$_SESSION['info']['email']:''?>"><br>
+            <div calss="btn-box">
+            <button type="submit" name="next" value="Next">Next</button>
+            <button><a href="form1.php">Previous</a></button>
+            </div>
         </form>
+        <div class="step-row">
+                <div id="progress"></div>
+                <div class="step-col"><small>Step1</small></div>
+                <div class="step-col"><small>Step2</small></div>
+                <div class="step-col"><small>Step3</small></div>
+                
+        </div>
+        </div>
     </body>
 </html>

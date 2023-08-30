@@ -21,15 +21,26 @@ if(isset($_POST['next'])){
 <html lang="en">
     <head>
        <meta charset="UTF-8">
+       <link rel="stylesheet" href="style.css">
        <title>Form1</title>
     </head>
     <body>
+        <div class="container">
+        <h3>Name</h3>
         <form action="" method="POST">
             <label for="">First Name</label><br>
             <input type="text" name="fname" value="<?=isset($_SESSION['info']['fname'])?$_SESSION['info']['fname']:''?>"><br>
             <label for="">Last Name</label><br>
-            <input type="text" name="lname" value="<?=isset($_SESSION['info']['lname'])?$_SESSION['info']['lname']:''?>"><br>><br>
-            <input type="submit" name="next" value="Next">
+            <input type="text" name="lname" value="<?=isset($_SESSION['info']['lname'])?$_SESSION['info']['lname']:''?>"><br>
+            <div class="btn-box"><button type="submit" name="next" value="Next">Next</button></div>
         </form>
+        <div class="step-row">
+                <div id="progress"></div>
+                <div class="step-col"><small>Step1</small></div>
+                <div class="step-col"><small>Step2</small></div>
+                <div class="step-col"><small>Step3</small></div>
+                
+        </div>
+        </div>
     </body>
 </html>

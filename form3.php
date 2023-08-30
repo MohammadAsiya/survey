@@ -20,18 +20,24 @@ if(isset($_POST['submit'])){
 <!DOCTYPE html>
 <html lang="en">
     <head>
+       <link rel="stylesheet"href="style.css">
        <meta charset="UTF-8">
        <title>form3</title>
     </head>
     <body>
+        <div class="container">
+        <h3>Address</h3>
         <form action="" method="POST">
             <label for="">Address</label><br>
             <input type="text" name="address" value="<?=isset($_SESSION['info']['address'])?$_SESSION['info']['address']:''?>"><br>
             <label for="">Age</label><br>
             <input type="text" name="age"  value="<?=isset($_SESSION['info']['age'])?$_SESSION['info']['age']:''?>"><br>
-            <input type="submit" name="submit" value="submit">
-            <a href="form2.php">Previous</a>
+            <div class="btn-box">
+            <button type="submit" name="submit" value="submit">submit</button>
+            <button><a href="form2.php">Previous</a></button>
+            </div>
 
         </form>
+        </div>
     </body>
 </html>
